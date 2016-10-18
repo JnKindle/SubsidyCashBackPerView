@@ -15,6 +15,10 @@
 		D745737E1DAB421E0061631A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D745737C1DAB421E0061631A /* LaunchScreen.storyboard */; };
 		D74573891DAB421F0061631A /* SubsidyCashBackPerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74573881DAB421F0061631A /* SubsidyCashBackPerViewTests.m */; };
 		D74573941DAB421F0061631A /* SubsidyCashBackPerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74573931DAB421F0061631A /* SubsidyCashBackPerViewUITests.m */; };
+		D74573A41DAB42830061631A /* SubsidyCashBackPerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D74573A31DAB42830061631A /* SubsidyCashBackPerViewManager.m */; };
+		D74573A81DAB7AA50061631A /* user_login_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D74573A61DAB7AA50061631A /* user_login_close@2x.png */; };
+		D74573A91DAB7AA50061631A /* user_login_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D74573A71DAB7AA50061631A /* user_login_close@3x.png */; };
+		D74573AC1DAB86B90061631A /* SubsidyCashBackPerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D74573AB1DAB86B90061631A /* SubsidyCashBackPerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		D745738F1DAB421F0061631A /* SubsidyCashBackPerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubsidyCashBackPerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74573931DAB421F0061631A /* SubsidyCashBackPerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubsidyCashBackPerViewUITests.m; sourceTree = "<group>"; };
 		D74573951DAB421F0061631A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74573A21DAB42830061631A /* SubsidyCashBackPerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubsidyCashBackPerViewManager.h; sourceTree = "<group>"; };
+		D74573A31DAB42830061631A /* SubsidyCashBackPerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubsidyCashBackPerViewManager.m; sourceTree = "<group>"; };
+		D74573A51DAB450A0061631A /* SubsidyCashBackPerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubsidyCashBackPerView.h; sourceTree = "<group>"; };
+		D74573A61DAB7AA50061631A /* user_login_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_login_close@2x.png"; sourceTree = "<group>"; };
+		D74573A71DAB7AA50061631A /* user_login_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_login_close@3x.png"; sourceTree = "<group>"; };
+		D74573AA1DAB86B90061631A /* SubsidyCashBackPerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubsidyCashBackPerCell.h; sourceTree = "<group>"; };
+		D74573AB1DAB86B90061631A /* SubsidyCashBackPerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubsidyCashBackPerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		D745736D1DAB421E0061631A /* SubsidyCashBackPerView */ = {
 			isa = PBXGroup;
 			children = (
+				D74573A11DAB42380061631A /* SubsidyCashBackPerView */,
 				D74573711DAB421E0061631A /* AppDelegate.h */,
 				D74573721DAB421E0061631A /* AppDelegate.m */,
 				D74573741DAB421E0061631A /* ViewController.h */,
@@ -138,6 +150,20 @@
 				D74573951DAB421F0061631A /* Info.plist */,
 			);
 			path = SubsidyCashBackPerViewUITests;
+			sourceTree = "<group>";
+		};
+		D74573A11DAB42380061631A /* SubsidyCashBackPerView */ = {
+			isa = PBXGroup;
+			children = (
+				D74573A61DAB7AA50061631A /* user_login_close@2x.png */,
+				D74573A71DAB7AA50061631A /* user_login_close@3x.png */,
+				D74573A51DAB450A0061631A /* SubsidyCashBackPerView.h */,
+				D74573AA1DAB86B90061631A /* SubsidyCashBackPerCell.h */,
+				D74573AB1DAB86B90061631A /* SubsidyCashBackPerCell.m */,
+				D74573A21DAB42830061631A /* SubsidyCashBackPerViewManager.h */,
+				D74573A31DAB42830061631A /* SubsidyCashBackPerViewManager.m */,
+			);
+			path = SubsidyCashBackPerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74573A81DAB7AA50061631A /* user_login_close@2x.png in Resources */,
+				D74573A91DAB7AA50061631A /* user_login_close@3x.png in Resources */,
 				D745737E1DAB421E0061631A /* LaunchScreen.storyboard in Resources */,
 				D745737B1DAB421E0061631A /* Assets.xcassets in Resources */,
 				D74573791DAB421E0061631A /* Main.storyboard in Resources */,
@@ -272,6 +300,8 @@
 			files = (
 				D74573761DAB421E0061631A /* ViewController.m in Sources */,
 				D74573731DAB421E0061631A /* AppDelegate.m in Sources */,
+				D74573AC1DAB86B90061631A /* SubsidyCashBackPerCell.m in Sources */,
+				D74573A41DAB42830061631A /* SubsidyCashBackPerViewManager.m in Sources */,
 				D74573701DAB421E0061631A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

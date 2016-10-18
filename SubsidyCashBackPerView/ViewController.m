@@ -8,20 +8,96 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "SubsidyCashBackPerView.h"
+
+@interface ViewController ()<SubsidyCashBackPerViewManagerDelegate>
+
+@property (nonatomic, strong) NSArray *tempArray;
 
 @end
 
 @implementation ViewController
 
+-(NSArray *)tempArray
+{
+    if (!_tempArray) {
+        _tempArray = @[
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%",
+                       @"黄金珠宝 | 返现 5%"];
+    }
+    return _tempArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [[SubsidyCashBackPerViewManager sharedInstance] showSubsidyCashBackPerViewWithSubsidyCashBackPerDataArray:self.tempArray];
+    [SubsidyCashBackPerViewManager sharedInstance].delegate = self;
+}
+
+-(void)didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"%@",self.tempArray[index]);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
 @end
